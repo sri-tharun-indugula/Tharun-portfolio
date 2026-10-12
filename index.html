@@ -4,13 +4,51 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234285F4'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Indugula Veera Venkata Sri Tharun - Senior Angular Developer & Software Engineer Portfolio. 5+ Years experience across Banking, Healthcare, E-Commerce, and HR Management." />
+    <meta name="theme-color" content="#07090e" />
+    <meta name="description" content="Indugula Veera Venkata Sri Tharun - Senior Software Engineer & Angular Developer. 5+ Years enterprise experience across Banking, Healthcare, E-Commerce, and HR Management." />
+    <meta name="author" content="Indugula Veera Venkata Sri Tharun" />
+    <meta name="keywords" content="Sri Tharun, Angular Developer, Senior Software Engineer, React, Next.js, FastAPI, Enterprise Architecture, Google Cloud" />
+
+    <!-- Open Graph (Facebook / LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tharun-portfolio-a8602.web.app/" />
+    <meta property="og:title" content="Indugula Veera Venkata Sri Tharun | Senior Angular Developer & Cloud Engineer" />
+    <meta property="og:description" content="5+ Years experience building high-impact enterprise Single Page Applications and scalable microservices with Angular, React & FastAPI." />
+    <meta property="og:site_name" content="Sri Tharun.dev" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Indugula Veera Venkata Sri Tharun | Senior Software Engineer" />
+    <meta name="twitter:description" content="Crafting High-Impact Full-Stack & Cloud Apps with Angular, React & FastAPI." />
+
     <title>Indugula Veera Venkata Sri Tharun | Senior Angular Developer & Cloud Engineer</title>
     
     <!-- Google Fonts: Inter & Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Critical Mobile Navigation Styles -->
+    <style>
+      @media screen and (max-width: 1024px) {
+        .nav-links {
+          display: none !important;
+        }
+        .desktop-nav-item,
+        .desktop-hire-btn,
+        .desktop-sync-btn {
+          display: none !important;
+        }
+        .mobile-menu-toggle {
+          display: inline-flex !important;
+        }
+      }
+      @media screen and (max-width: 640px) {
+        .logo-badge-role {
+          display: none !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- Figma Canvas Dot Grid Background -->
@@ -44,17 +82,65 @@
           </nav>
 
           <div class="nav-actions">
-            <a href="https://www.linkedin.com/in/indugula-veera-venkata-sri-tharun-4418b5217/" target="_blank" rel="noopener" class="btn-icon" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+            <a href="https://www.linkedin.com/in/indugula-veera-venkata-sri-tharun-4418b5217/" target="_blank" rel="noopener" class="btn-icon desktop-nav-item" title="LinkedIn Profile" aria-label="LinkedIn Profile">
               <i data-lucide="external-link"></i>
             </a>
-            <button id="open-sheet-config-btn" class="btn-icon" title="Google Sheets CMS Settings" aria-label="Google Sheets CMS Settings">
+            <button id="open-sheet-config-btn" class="btn-icon desktop-nav-item" title="Google Sheets CMS Settings" aria-label="Google Sheets CMS Settings">
               <i data-lucide="database"></i>
             </button>
-            <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" title="Google Docs Resume">
+            <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-sm desktop-nav-item" title="Google Docs Resume">
               <i data-lucide="file-text"></i>
               <span>Resume</span>
             </a>
-            <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+            <a href="#contact" class="btn btn-primary btn-sm desktop-hire-btn">Hire Me</a>
+            <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+              <i data-lucide="menu" id="mobile-menu-icon"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer Overlay -->
+        <div id="mobile-drawer" class="mobile-nav-drawer hidden" role="dialog" aria-modal="true" aria-label="Navigation Menu">
+          <div class="mobile-drawer-content">
+            <div class="mobile-drawer-header">
+              <div class="mobile-brand">
+                <span class="logo-badge">
+                  <span class="g-dot dot-blue"></span>
+                  <span class="g-dot dot-red"></span>
+                  <span class="g-dot dot-yellow"></span>
+                  <span class="g-dot dot-green"></span>
+                </span>
+                <span class="logo-text">Sri Tharun<span class="highlight">.dev</span></span>
+              </div>
+              <button id="close-mobile-drawer-btn" class="btn-icon" aria-label="Close Navigation">
+                <i data-lucide="x"></i>
+              </button>
+            </div>
+            <nav class="mobile-nav-links">
+              <a href="#hero" class="mobile-nav-link"><i data-lucide="home"></i> <span>Home Overview</span></a>
+              <a href="#experience" class="mobile-nav-link"><i data-lucide="briefcase"></i> <span>Experience (5+ Yrs)</span></a>
+              <a href="#projects" class="mobile-nav-link"><i data-lucide="layout-grid"></i> <span>Enterprise Projects</span></a>
+              <a href="#skills" class="mobile-nav-link"><i data-lucide="code-2"></i> <span>Skills & Frameworks</span></a>
+              <a href="#architecture" class="mobile-nav-link"><i data-lucide="cloud"></i> <span>Google Cloud Stack</span></a>
+              <a href="#showcase" class="mobile-nav-link"><i data-lucide="presentation"></i> <span>Architecture Slides</span></a>
+              <a href="#contact" class="mobile-nav-link"><i data-lucide="mail"></i> <span>Contact & Inquiries</span></a>
+            </nav>
+            <div class="mobile-drawer-footer">
+              <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-full">
+                <i data-lucide="file-text"></i> Open Google Docs Resume
+              </a>
+              <a href="#contact" class="btn btn-primary btn-full mobile-drawer-contact-btn">
+                <i data-lucide="send"></i> Let's Talk / Hire Me
+              </a>
+              <div class="mobile-drawer-quick-row">
+                <a href="https://www.linkedin.com/in/indugula-veera-venkata-sri-tharun-4418b5217/" target="_blank" rel="noopener" class="btn btn-glass btn-sm mobile-quick-btn">
+                  <i data-lucide="external-link"></i> LinkedIn
+                </a>
+                <button id="mobile-drawer-sheet-btn" class="btn btn-glass btn-sm mobile-quick-btn">
+                  <i data-lucide="database"></i> Sheet CMS
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -81,19 +167,21 @@
             </p>
 
             <div class="hero-cta-group">
-              <a href="#projects" class="btn btn-primary btn-lg">
+              <a href="#projects" class="btn btn-primary btn-lg hero-btn-main">
                 <i data-lucide="layout-grid"></i>
                 <span>Explore Enterprise Work</span>
               </a>
-              <button id="view-resume-btn" class="btn btn-glass btn-lg">
-                <i data-lucide="file-check"></i>
-                <span>Interactive Resume</span>
-              </button>
-              <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" title="Open Google Docs Resume">
-                <i data-lucide="external-link"></i>
-                <span>Google Doc Resume</span>
-              </a>
-              <button id="quick-sync-btn" class="btn btn-ghost btn-lg" title="Reload live data from Google Sheet CMS">
+              <div class="hero-btn-row">
+                <button id="view-resume-btn" class="btn btn-glass btn-lg hero-btn-sub">
+                  <i data-lucide="file-check"></i>
+                  <span>Interactive Resume</span>
+                </button>
+                <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-lg hero-btn-sub" title="Open Google Docs Resume">
+                  <i data-lucide="external-link"></i>
+                  <span>Google Doc</span>
+                </a>
+              </div>
+              <button id="quick-sync-btn" class="btn btn-ghost btn-lg desktop-sync-btn" title="Reload live data from Google Sheet CMS">
                 <i data-lucide="refresh-cw" id="sync-icon"></i>
                 <span id="sync-status-text">Sync Sheet</span>
               </button>
@@ -950,12 +1038,12 @@
       </aside>
 
       <!-- MODAL: Google Sheets CMS Configuration -->
-      <div id="sheet-modal" class="modal-overlay hidden">
+      <div id="sheet-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="sheet-modal-title">
         <div class="modal-card glass-panel">
           <div class="modal-header">
             <div class="modal-title">
               <i data-lucide="database" class="icon-accent"></i>
-              <h3>Google Sheets Headless CMS Settings</h3>
+              <h3 id="sheet-modal-title">Google Sheets Headless CMS Settings</h3>
             </div>
             <button id="close-sheet-modal-btn" class="btn-icon" aria-label="Close modal">
               <i data-lucide="x"></i>
@@ -999,12 +1087,12 @@
       </div>
 
       <!-- MODAL: Full Resume Previewer -->
-      <div id="resume-modal" class="modal-overlay hidden">
+      <div id="resume-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
         <div class="modal-card modal-lg glass-panel">
           <div class="modal-header">
             <div class="modal-title">
               <i data-lucide="file-text" class="icon-accent"></i>
-              <h3>Indugula Veera Venkata Sri Tharun – Resume</h3>
+              <h3 id="resume-modal-title">Indugula Veera Venkata Sri Tharun – Resume</h3>
             </div>
             <button id="close-resume-modal-btn" class="btn-icon" aria-label="Close modal">
               <i data-lucide="x"></i>

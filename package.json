@@ -1,14 +1,20 @@
 {
-  "name": "project-1",
-  "version": "0.0.0",
+  "name": "sri-tharun-portfolio",
+  "version": "1.0.0",
+  "description": "Indugula Veera Venkata Sri Tharun - Senior Angular Developer & Software Engineer Enterprise Portfolio",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && node ./node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting",
+    "deploy:firebase": "npm run build && node ./node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting",
+    "deploy:vercel": "npm run build && npx -y vercel --prod",
+    "deploy:surge": "npm run build && npx -y surge dist"
   },
   "devDependencies": {
+    "firebase-tools": "^15.33.0",
     "vite": "^8.3.0"
   },
   "dependencies": {

@@ -43,7 +43,8 @@ import {
   Terminal,
   Zap,
   Copy,
-  Check
+  Check,
+  Menu
 } from 'lucide';
 import confetti from 'canvas-confetti';
 
@@ -174,7 +175,8 @@ function initIcons() {
       Terminal,
       Zap,
       Copy,
-      Check
+      Check,
+      Menu
     }
   });
 }
@@ -247,7 +249,8 @@ async function fetchSheetData(url) {
 }
 
 function parseCSV(csvText) {
-  const lines = csvText.trim().split('\n');
+  const normalized = csvText.replace(/\r\n/g, '\n').replace(/\r/g, '\n').trim();
+  const lines = normalized.split('\n');
   if (lines.length <= 1) return [];
   const headers = lines[0].split(',').map(h => h.trim().toLowerCase().replace(/["']/g, ''));
   return lines.slice(1).map((line, i) => {
@@ -356,6 +359,49 @@ function setupTabs() {
       const panel = document.getElementById(targetId);
       if (panel) panel.classList.add('active');
     });
+  });
+}
+
+// ============================================================================
+// MOBILE NAVIGATION DRAWER CONTROLLER
+// ============================================================================
+function setupMobileNav() {
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const drawer = document.getElementById('mobile-drawer');
+  const closeBtn = document.getElementById('close-mobile-drawer-btn');
+  const navLinks = document.querySelectorAll('.mobile-nav-link, .mobile-drawer-contact-btn');
+
+  const openDrawer = () => {
+    if (drawer) {
+      drawer.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeDrawer = () => {
+    if (drawer) {
+      drawer.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+  };
+
+  if (menuBtn) menuBtn.addEventListener('click', openDrawer);
+  if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeDrawer);
+  });
+
+  if (drawer) {
+    drawer.addEventListener('click', (e) => {
+      if (e.target === drawer) closeDrawer();
+    });
+  }
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer && !drawer.classList.contains('hidden')) {
+      closeDrawer();
+    }
   });
 }
 
@@ -1414,6 +1460,18 @@ function setupModals() {
   if (openFromContact) openFromContact.addEventListener('click', openModal);
   if (closeSheetBtn) closeSheetBtn.addEventListener('click', closeModal);
 
+  const mobileDrawerSheetBtn = document.getElementById('mobile-drawer-sheet-btn');
+  if (mobileDrawerSheetBtn) {
+    mobileDrawerSheetBtn.addEventListener('click', () => {
+      const drawer = document.getElementById('mobile-drawer');
+      if (drawer) {
+        drawer.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+      openModal();
+    });
+  }
+
   if (saveSheetBtn) {
     saveSheetBtn.addEventListener('click', () => {
       const url = sheetUrlInput.value.trim();
@@ -1553,9 +1611,10 @@ function triggerConfetti() {
 // ============================================================================
 // MAIN BOOTSTRAP
 // ============================================================================
-document.addEventListener('DOMContentLoaded', () => {
+function bootstrap() {
   initIcons();
   setupTabs();
+  setupMobileNav();
   setupDeckPlayer();
   setupModals();
   setupContactForm();
@@ -1583,4 +1642,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load initial data (custom saved Google Sheet or Demo Data)
   const savedUrl = localStorage.getItem('google_sheet_portfolio_url') || '';
   fetchSheetData(savedUrl);
-});
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', bootstrap);
+} else {
+  bootstrap();
+}
