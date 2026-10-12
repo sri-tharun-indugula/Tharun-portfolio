@@ -1,0 +1,1127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234285F4'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Indugula Veera Venkata Sri Tharun - Senior Angular Developer & Software Engineer Portfolio. 5+ Years experience across Banking, Healthcare, E-Commerce, and HR Management." />
+    <title>Indugula Veera Venkata Sri Tharun | Senior Angular Developer & Cloud Engineer</title>
+    
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Figma Canvas Dot Grid Background -->
+    <div class="canvas-grid-bg"></div>
+
+    <!-- Stripe-inspired Multi-layer Luminous Ambient Glow Orbs -->
+    <div class="ambient-glow glow-blue"></div>
+    <div class="ambient-glow glow-purple"></div>
+    <div class="ambient-glow glow-green"></div>
+    <div class="ambient-glow glow-red"></div>
+
+    <div id="app">
+      <!-- Top Sticky Navigation (Figma/Stripe Glassmorphism) -->
+      <header class="navbar" id="navbar">
+        <div class="nav-container">
+          <a href="#" class="logo">
+            <span class="logo-badge">
+              <span class="g-dot dot-blue"></span>
+              <span class="g-dot dot-red"></span>
+              <span class="g-dot dot-yellow"></span>
+              <span class="g-dot dot-green"></span>
+            </span>
+            <span class="logo-text">Sri Tharun<span class="highlight">.dev</span></span>
+            <span class="logo-badge-role">Angular</span>
+          </a>
+
+          <nav class="nav-links">
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+          </nav>
+
+          <div class="nav-actions">
+            <a href="https://www.linkedin.com/in/indugula-veera-venkata-sri-tharun-4418b5217/" target="_blank" rel="noopener" class="btn-icon" title="LinkedIn Profile" aria-label="LinkedIn Profile">
+              <i data-lucide="external-link"></i>
+            </a>
+            <button id="open-sheet-config-btn" class="btn-icon" title="Google Sheets CMS Settings" aria-label="Google Sheets CMS Settings">
+              <i data-lucide="database"></i>
+            </button>
+            <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-sm" title="Google Docs Resume">
+              <i data-lucide="file-text"></i>
+              <span>Resume</span>
+            </a>
+            <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Hero Section (Stripe Dynamic Mesh + Figma Typography) -->
+        <section id="hero" class="hero-section">
+          <div class="container hero-container">
+            <!-- Availability Pill Badge -->
+            <div class="hero-badge">
+              <span class="pulse-indicator-emerald"></span>
+              <span>Available for Senior Frontend & Full-Stack Roles • Hyderabad / Remote</span>
+            </div>
+            
+            <h1 class="hero-title">
+              Crafting High-Impact <span class="gradient-text-stripe">Full-Stack & Cloud Apps</span> with Angular, React & FastAPI.
+            </h1>
+            
+            <p class="hero-subtitle">
+              I am <strong>Indugula Veera Venkata Sri Tharun</strong>, a Senior Software Engineer with <strong>5+ years of experience</strong> 
+              building enterprise Single Page Applications and scalable microservices using <strong>Angular (8–18), React, Next.js, FastAPI, RESTful APIs</strong>, 
+              and <strong>Jenkins CI/CD pipelines</strong> across Banking, Healthcare, E-Commerce, and HR domains.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary btn-lg">
+                <i data-lucide="layout-grid"></i>
+                <span>Explore Enterprise Work</span>
+              </a>
+              <button id="view-resume-btn" class="btn btn-glass btn-lg">
+                <i data-lucide="file-check"></i>
+                <span>Interactive Resume</span>
+              </button>
+              <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-lg" title="Open Google Docs Resume">
+                <i data-lucide="external-link"></i>
+                <span>Google Doc Resume</span>
+              </a>
+              <button id="quick-sync-btn" class="btn btn-ghost btn-lg" title="Reload live data from Google Sheet CMS">
+                <i data-lucide="refresh-cw" id="sync-icon"></i>
+                <span id="sync-status-text">Sync Sheet</span>
+              </button>
+            </div>
+
+            <!-- Stripe/Figma Inspired Quick Stats Strip -->
+            <div class="stats-matrix">
+              <div class="stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years of Experience</div>
+                <div class="stat-sub">Enterprise Engineering</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Core Domains</div>
+                <div class="stat-sub">Banking, Health, Retail, HR</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">SPAs & Portals</div>
+                <div class="stat-sub">Production Deployed</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">System Reliability</div>
+                <div class="stat-sub">Optimized Performance</div>
+              </div>
+            </div>
+
+            <!-- Integrated Technology Strip -->
+            <div class="tech-strip">
+              <span class="strip-label">Core Engineering Stack:</span>
+              <div class="strip-badges">
+                <div class="service-pill" title="Angular 8-18 & React ecosystem">
+                  <span class="pill-dot dot-purple"></span>
+                  <span>Angular 18 & React.js</span>
+                </div>
+                <div class="service-pill" title="High-throughput Python FastAPI microservices">
+                  <span class="pill-dot dot-green"></span>
+                  <span>FastAPI & RESTful APIs</span>
+                </div>
+                <div class="service-pill" title="Continuous Integration & Delivery with Jenkins">
+                  <span class="pill-dot dot-blue"></span>
+                  <span>Jenkins CI/CD Pipelines</span>
+                </div>
+                <div class="service-pill" title="Reactive state & asynchronous streams">
+                  <span class="pill-dot dot-yellow"></span>
+                  <span>RxJS, NgRx & Redux</span>
+                </div>
+                <div class="service-pill" title="Google Cloud & Workspace Headless CMS">
+                  <span class="pill-dot dot-red"></span>
+                  <span>Google Cloud & Firebase</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Career Journey & Experience Section (Figma Timeline Card Layout) -->
+        <section id="experience" class="section bg-glass">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Career Milestones</span>
+              <h2 class="section-title">5+ Years of Industry Experience</h2>
+              <p class="section-subtitle">
+                Proven track record delivering scalable enterprise software across hybrid and on-site engineering teams.
+              </p>
+            </div>
+
+            <div class="timeline-container">
+              <!-- Job 1: Belen IT Solutions -->
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-dot current"></span>
+                </div>
+                <div class="timeline-card glass-panel">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="company-badge current">Current Role</span>
+                      <h3 class="role-title">Senior Software Engineer</h3>
+                      <h4 class="company-name">Belen IT Solutions</h4>
+                    </div>
+                    <div class="timeline-meta">
+                      <span class="time-range"><i data-lucide="clock"></i> Oct 2025 – Present</span>
+                      <span class="location-tag"><i data-lucide="map-pin"></i> Hyderabad • Hybrid</span>
+                    </div>
+                  </div>
+                  <ul class="experience-list">
+                    <li>Architected scalable enterprise Angular applications utilizing modern Angular architecture (Standalone components, reactive signals, and micro-frontends).</li>
+                    <li>Designed reusable UI component libraries ensuring cross-browser compliance, accessibility (WCAG), and responsive rendering.</li>
+                    <li>Integrated asynchronous RESTful services utilizing Angular HTTP clients, interceptors, and RxJS reactive event streams.</li>
+                    <li>Partnered with Node.js & Express.js backend teams to design high-throughput API contracts and secure endpoints.</li>
+                    <li>Led Agile sprint reviews, mentoring junior engineers, conducting rigorous code reviews, and executing performance optimizations.</li>
+                  </ul>
+                  <div class="skill-chips">
+                    <span class="chip">Angular 18</span>
+                    <span class="chip">TypeScript</span>
+                    <span class="chip">RxJS</span>
+                    <span class="chip">Node.js</span>
+                    <span class="chip">REST APIs</span>
+                    <span class="chip">Performance Tuning</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Job 2: Denken Solutions Inc. -->
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-card glass-panel">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="company-badge">Enterprise UI</span>
+                      <h3 class="role-title">UI Developer</h3>
+                      <h4 class="company-name">Denken Solutions Inc.</h4>
+                    </div>
+                    <div class="timeline-meta">
+                      <span class="time-range"><i data-lucide="clock"></i> Apr 2025 – Sep 2025</span>
+                      <span class="location-tag"><i data-lucide="map-pin"></i> Andhra Pradesh • On-site</span>
+                    </div>
+                  </div>
+                  <ul class="experience-list">
+                    <li>Developed responsive Single Page Applications in Angular, ensuring sub-second route transitions and crisp visual hierarchy.</li>
+                    <li>Implemented robust reactive state management and event propagation patterns using NgRx and RxJS.</li>
+                    <li>Built modular components using SCSS design tokens, PrimeNG, and customized Angular Material elements.</li>
+                    <li>Coordinated with QA and product managers in daily Scrum meetings to achieve 100% sprint goal completion.</li>
+                  </ul>
+                  <div class="skill-chips">
+                    <span class="chip">Angular</span>
+                    <span class="chip">RxJS</span>
+                    <span class="chip">NgRx</span>
+                    <span class="chip">SCSS</span>
+                    <span class="chip">PrimeNG</span>
+                    <span class="chip">Agile</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Job 3: Resource One IT Solutions -->
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-card glass-panel">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="company-badge">Full-Stack Scale</span>
+                      <h3 class="role-title">Full Stack Developer</h3>
+                      <h4 class="company-name">Resource One IT Solutions</h4>
+                    </div>
+                    <div class="timeline-meta">
+                      <span class="time-range"><i data-lucide="clock"></i> Jun 2022 – Feb 2025</span>
+                      <span class="location-tag"><i data-lucide="map-pin"></i> Hyderabad • On-site</span>
+                    </div>
+                  </div>
+                  <ul class="experience-list">
+                    <li>Delivered end-to-end web features across complex business domains including healthcare record systems and banking customer workflows.</li>
+                    <li>Authored clean, maintainable backend APIs in Node.js and Express.js, connecting to MySQL and MongoDB datastores.</li>
+                    <li>Constructed modular Angular services with comprehensive error-handling interceptors and caching strategies.</li>
+                    <li>Managed release pipelines using Git and Azure DevOps with automated unit and regression testing.</li>
+                  </ul>
+                  <div class="skill-chips">
+                    <span class="chip">Angular 12-16</span>
+                    <span class="chip">Node.js</span>
+                    <span class="chip">Express.js</span>
+                    <span class="chip">MySQL</span>
+                    <span class="chip">MongoDB</span>
+                    <span class="chip">Azure DevOps</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Job 4: Unitel Software -->
+              <div class="timeline-item">
+                <div class="timeline-marker">
+                  <span class="timeline-dot"></span>
+                </div>
+                <div class="timeline-card glass-panel">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="company-badge">Foundation</span>
+                      <h3 class="role-title">Full Stack Engineer</h3>
+                      <h4 class="company-name">Unitel Software</h4>
+                    </div>
+                    <div class="timeline-meta">
+                      <span class="time-range"><i data-lucide="clock"></i> Jun 2021 – Mar 2022</span>
+                      <span class="location-tag"><i data-lucide="map-pin"></i> Hyderabad • On-site</span>
+                    </div>
+                  </div>
+                  <ul class="experience-list">
+                    <li>Designed responsive customer-facing web pages and administrative portals utilizing Angular and modern CSS3 layouts.</li>
+                    <li>Engineered dynamic forms with custom reactive validators and asynchronous backend verification.</li>
+                    <li>Assisted in database schema optimizations, REST API debugging via Postman, and cross-browser testing.</li>
+                  </ul>
+                  <div class="skill-chips">
+                    <span class="chip">Angular</span>
+                    <span class="chip">JavaScript ES6</span>
+                    <span class="chip">HTML5/CSS3</span>
+                    <span class="chip">Postman</span>
+                    <span class="chip">Git</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section (Dynamically Powered by Google Sheets CMS) -->
+        <section id="projects" class="section">
+          <div class="container">
+            <div class="section-header-flex">
+              <div>
+                <span class="section-tag">Enterprise Portfolio</span>
+                <h2 class="section-title">Featured Solutions & Case Studies</h2>
+                <p class="section-subtitle" id="cms-source-badge">
+                  <span class="pulse-indicator"></span> 
+                  <span id="data-source-label">Live Google Sheets CMS Synchronized</span>
+                </p>
+              </div>
+
+              <!-- Filter Tags -->
+              <div class="filter-group" id="filter-container">
+                <button class="filter-btn active" data-filter="all">All Domains</button>
+                <button class="filter-btn" data-filter="Banking">Banking</button>
+                <button class="filter-btn" data-filter="Healthcare">Healthcare</button>
+                <button class="filter-btn" data-filter="E-commerce">E-Commerce</button>
+                <button class="filter-btn" data-filter="HR Management">HR Management</button>
+                <button class="filter-btn" data-filter="Cloud">Cloud & CMS</button>
+              </div>
+            </div>
+
+            <!-- Projects Grid Container -->
+            <div class="projects-grid" id="projects-grid">
+              <!-- Dynamically populated via main.js with high-fidelity domain cards -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Technical Competencies & Skills Matrix Section -->
+        <section id="skills" class="section bg-glass">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Core Capabilities</span>
+              <h2 class="section-title">Technical Expertise & Tooling</h2>
+              <p class="section-subtitle">
+                A breakdown of modern frameworks, languages, cloud tools, and design libraries used throughout 5+ years of engineering.
+              </p>
+            </div>
+
+            <div class="skills-matrix-grid">
+              <!-- Frontend: Angular & React Core -->
+              <div class="skill-matrix-card glass-panel">
+                <div class="matrix-card-header">
+                  <div class="matrix-icon icon-blue"><i data-lucide="code-2"></i></div>
+                  <div>
+                    <h3>Frontend: Angular & React</h3>
+                    <p>Reactive, Component-Driven & Micro-Frontends</p>
+                  </div>
+                </div>
+                <div class="matrix-bars">
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>Angular (8–18) & Reactive Signals</span><span>95%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-blue" style="width: 95%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>React.js, Next.js & React Hooks</span><span>92%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-blue" style="width: 92%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>RxJS, NgRx & Redux Toolkit</span><span>90%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-blue" style="width: 90%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>TypeScript & JavaScript ES6+</span><span>94%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-blue" style="width: 94%;"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Backend, FastAPI & RESTful APIs -->
+              <div class="skill-matrix-card glass-panel">
+                <div class="matrix-card-header">
+                  <div class="matrix-icon icon-green"><i data-lucide="server"></i></div>
+                  <div>
+                    <h3>FastAPI, RESTful APIs & Backend</h3>
+                    <p>High-Throughput Microservices & Endpoints</p>
+                  </div>
+                </div>
+                <div class="matrix-bars">
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>RESTful API Architecture & Design</span><span>95%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-green" style="width: 95%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>FastAPI (Python Async, Pydantic, OpenAPI)</span><span>90%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-green" style="width: 90%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>Node.js, Express.js & Microservices</span><span>88%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-green" style="width: 88%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>MongoDB, MySQL, PostgreSQL & SQL</span><span>85%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-green" style="width: 85%;"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- DevOps, Jenkins & Cloud Pipelines -->
+              <div class="skill-matrix-card glass-panel">
+                <div class="matrix-card-header">
+                  <div class="matrix-icon icon-yellow"><i data-lucide="cloud"></i></div>
+                  <div>
+                    <h3>DevOps, Jenkins & Cloud</h3>
+                    <p>Automated CI/CD & Production Delivery</p>
+                  </div>
+                </div>
+                <div class="matrix-bars">
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>Jenkins CI/CD Pipelines (Jenkinsfile & Builds)</span><span>90%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-yellow" style="width: 90%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>Azure DevOps, Git, GitHub Actions</span><span>92%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-yellow" style="width: 92%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>Google Cloud Platform & Firebase Hosting</span><span>90%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-yellow" style="width: 90%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>Postman API Automated Testing</span><span>92%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-yellow" style="width: 92%;"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- UI Systems, Styling & Design Engineering -->
+              <div class="skill-matrix-card glass-panel">
+                <div class="matrix-card-header">
+                  <div class="matrix-icon icon-purple"><i data-lucide="palette"></i></div>
+                  <div>
+                    <h3>UI Systems & Engineering</h3>
+                    <p>Modern Styling, Design Tokens & Agile</p>
+                  </div>
+                </div>
+                <div class="matrix-bars">
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>HTML5, CSS3, SCSS/SASS Architecture</span><span>95%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-purple" style="width: 95%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>Angular Material, PrimeNG & Tailwind</span><span>90%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-purple" style="width: 90%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>Responsive Web Design & Cross-Browser</span><span>94%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-purple" style="width: 94%;"></div></div>
+                  </div>
+                  <div class="skill-bar-item">
+                    <div class="bar-info"><span>Agile, Scrum & Code Reviews</span><span>95%</span></div>
+                    <div class="progress-track"><div class="progress-fill fill-purple" style="width: 95%;"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Google Stack Breakdown Section -->
+        <section id="architecture" class="section">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Google Ecosystem</span>
+              <h2 class="section-title">Architected with Google Cloud & Workspace</h2>
+              <p class="section-subtitle">
+                Zero costly server overhead. Every part of this application connects directly with Google Cloud & Workspace services.
+              </p>
+            </div>
+
+            <div class="services-grid">
+              <div class="service-card card-sheets">
+                <div class="service-icon"><i data-lucide="table"></i></div>
+                <h3>1. Google Sheets Headless CMS</h3>
+                <p>Edit or add projects directly in Google Sheets. The website queries your spreadsheet via Google Apps Script and updates in real-time without redeploying code.</p>
+                <div class="card-footer-badge">
+                  <span class="badge-tag">Zero-Config REST API</span>
+                </div>
+              </div>
+
+              <div class="service-card card-drive">
+                <div class="service-icon"><i data-lucide="hard-drive"></i></div>
+                <h3>2. Google Drive Cloud Storage</h3>
+                <p>Hosts official resume documents, case study attachments, and high-resolution media with direct links and live preview modals.</p>
+                <div class="card-footer-badge">
+                  <span class="badge-tag">Cloud Asset CDN</span>
+                </div>
+              </div>
+
+              <div class="service-card card-forms">
+                <div class="service-icon"><i data-lucide="mail"></i></div>
+                <h3>3. Google Forms & Mail Routing</h3>
+                <p>Client inquiries trigger instantaneous alerts directly to your Gmail inbox and append new contact records to your spreadsheet.</p>
+                <div class="card-footer-badge">
+                  <span class="badge-tag">Automated Pipeline</span>
+                </div>
+              </div>
+
+              <div class="service-card card-firebase">
+                <div class="service-icon"><i data-lucide="flame"></i></div>
+                <h3>4. Firebase Global Edge Hosting</h3>
+                <p>Deployed with global SSL, automated caching, sub-second TTFB, and 99.99% uptime powered by Google Cloud Platform.</p>
+                <div class="card-footer-badge">
+                  <span class="badge-tag">Google Cloud CDN</span>
+                </div>
+              </div>
+
+              <div class="service-card card-slides">
+                <div class="service-icon"><i data-lucide="presentation"></i></div>
+                <h3>5. Google Slides & Looker</h3>
+                <p>Embedded interactive presentation decks and live business intelligence dashboards showcasing real-time data flows.</p>
+                <div class="card-footer-badge">
+                  <span class="badge-tag">Interactive Preview</span>
+                </div>
+              </div>
+
+              <div class="service-card card-maps">
+                <div class="service-icon"><i data-lucide="map-pin"></i></div>
+                <h3>6. Google Maps Location</h3>
+                <p>Clear regional presence in Hyderabad, Telangana, ready for global remote collaboration across US, European, and APAC timezones.</p>
+                <div class="card-footer-badge">
+                  <span class="badge-tag">Global Ready</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Interactive Google Showcase (Slides, Looker Studio, Drive) -->
+        <section id="showcase" class="section bg-glass">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Interactive Documents</span>
+              <h2 class="section-title">Live Resume & Cloud Showcase</h2>
+              <p class="section-subtitle">
+                Access official Google Docs documents, interactive decks, and live performance metrics directly from the cloud.
+              </p>
+            </div>
+
+            <div class="showcase-tabs">
+              <button class="tab-btn active" data-tab="tab-drive">
+                <i data-lucide="file-text"></i> Official Google Doc Resume
+              </button>
+              <button class="tab-btn" data-tab="tab-slides">
+                <i data-lucide="presentation"></i> Architecture Slides
+              </button>
+              <button class="tab-btn" data-tab="tab-looker">
+                <i data-lucide="bar-chart-2"></i> Performance Analytics
+              </button>
+            </div>
+
+            <div class="showcase-content">
+              <!-- Official Google Docs Resume Tab -->
+              <div class="tab-panel active" id="tab-drive">
+                <div class="embed-wrapper">
+                  <div class="embed-header">
+                    <span>Curriculum Vitae / Resume (Official Google Docs Cloud Hosted)</span>
+                    <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                      <i data-lucide="external-link"></i> Open Live Google Doc
+                    </a>
+                  </div>
+                  <div class="resume-preview-card">
+                    <div class="resume-doc-header">
+                      <div class="doc-icon"><i data-lucide="file-check"></i></div>
+                      <div>
+                        <h4>Indugula Veera Venkata Sri Tharun – Official Resume</h4>
+                        <p>Senior Angular Developer • 5+ Years Experience • Hyderabad, Telangana, India</p>
+                      </div>
+                    </div>
+                    <div class="resume-actions">
+                      <button class="btn btn-secondary btn-sm" id="open-drive-modal-btn">
+                        <i data-lucide="eye"></i> View Full Screen Modal
+                      </button>
+                      <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                        <i data-lucide="download"></i> Download / Print
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Google Slides Tab: Enterprise Architecture & Design Systems -->
+              <div class="tab-panel" id="tab-slides">
+                <div class="embed-wrapper deck-wrapper">
+                  <!-- Embed Header with View Switcher -->
+                  <div class="embed-header deck-header">
+                    <div class="deck-title-group">
+                      <span class="deck-main-tag"><i data-lucide="presentation"></i> Google Slides & Architecture Decks</span>
+                      <h3 class="deck-main-heading">Enterprise Architecture & Design Systems Masterclass</h3>
+                      <p class="deck-subtitle">In-depth architectural study modules covering <strong>Angular 18</strong>, <strong>FastAPI</strong>, <strong>React 19</strong>, <strong>Next.js</strong>, and <strong>Express.js</strong>.</p>
+                    </div>
+                    <div class="deck-header-actions">
+                      <div class="view-mode-toggle" id="slide-view-mode-toggle">
+                        <button class="view-btn active" id="btn-view-interactive" title="Interactive Presentation Deck">
+                          <i data-lucide="sparkles"></i> Interactive Deck
+                        </button>
+                        <button class="view-btn" id="btn-view-embed" title="Google Slides Web Embed">
+                          <i data-lucide="external-link"></i> Web Embed
+                        </button>
+                      </div>
+                      <a href="https://docs.google.com/presentation" target="_blank" rel="noopener" class="btn btn-secondary btn-sm link-external" title="Open Google Slides Workspace">
+                        <span>Open Slides</span> <i data-lucide="external-link"></i>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- INTERACTIVE SLIDE DECK PLAYER VIEW -->
+                  <div id="deck-interactive-view" class="deck-view active">
+                    <!-- Technology Filter Chips -->
+                    <div class="deck-category-nav" id="deck-category-nav">
+                      <button class="deck-chip active" data-category="all">
+                        <i data-lucide="layers"></i> All Decks (15)
+                      </button>
+                      <button class="deck-chip chip-angular" data-category="angular">
+                        <span class="chip-color-dot dot-angular"></span> Angular Enterprise (4)
+                      </button>
+                      <button class="deck-chip chip-fastapi" data-category="fastapi">
+                        <span class="chip-color-dot dot-fastapi"></span> FastAPI Microservices (3)
+                      </button>
+                      <button class="deck-chip chip-react" data-category="react">
+                        <span class="chip-color-dot dot-react"></span> React 19 & Concurrency (2)
+                      </button>
+                      <button class="deck-chip chip-nextjs" data-category="nextjs">
+                        <span class="chip-color-dot dot-nextjs"></span> Next.js App Router (3)
+                      </button>
+                      <button class="deck-chip chip-express" data-category="express">
+                        <span class="chip-color-dot dot-express"></span> Express.js & Node (2)
+                      </button>
+                      <button class="deck-chip chip-synthesis" data-category="synthesis">
+                        <span class="chip-color-dot dot-synthesis"></span> Stack Synthesis (1)
+                      </button>
+                    </div>
+
+                    <!-- Slide Player Container -->
+                    <div class="deck-player-stage glass-panel" id="deck-player-stage">
+                      <!-- Stage Toolbar -->
+                      <div class="stage-toolbar">
+                        <div class="stage-badge-group">
+                          <span class="stage-domain-badge" id="slide-domain-badge">Angular Enterprise</span>
+                          <span class="stage-slide-counter" id="slide-counter-badge">Slide 1 / 15</span>
+                        </div>
+                        <div class="stage-controls-group">
+                          <button class="stage-btn" id="btn-slide-autoplay" title="Toggle Auto-Play (5s per slide)">
+                            <i data-lucide="play" id="autoplay-icon"></i> <span id="autoplay-text">Auto-Play</span>
+                          </button>
+                          <button class="stage-btn" id="btn-slide-fullscreen" title="Full Screen Presentation Mode">
+                            <i data-lucide="maximize-2"></i> <span>Present</span>
+                          </button>
+                        </div>
+                      </div>
+
+                      <!-- Slide Viewport (Dynamically Injected) -->
+                      <div class="slide-viewport" id="slide-viewport">
+                        <!-- Populated by JavaScript -->
+                      </div>
+
+                      <!-- Slide Navigation Controls -->
+                      <div class="stage-footer-nav">
+                        <button class="nav-arrow-btn prev-btn" id="slide-prev-btn" aria-label="Previous Slide">
+                          <i data-lucide="chevron-left"></i> <span>Previous</span>
+                        </button>
+                        <div class="stage-dots" id="slide-dots-container">
+                          <!-- Populated dynamically -->
+                        </div>
+                        <button class="nav-arrow-btn next-btn" id="slide-next-btn" aria-label="Next Slide">
+                          <span>Next</span> <i data-lucide="chevron-right"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Slide Scrubber Thumbnails Strip -->
+                    <div class="deck-thumbnails-section">
+                      <div class="thumbnails-header">
+                        <span><i data-lucide="layout-grid"></i> Slide Navigator & Topic Scrubber</span>
+                        <span class="keyboard-hint">💡 Tip: Use <kbd>←</kbd> and <kbd>→</kbd> arrow keys to navigate</span>
+                      </div>
+                      <div class="deck-thumbnails-strip" id="deck-thumbnails-strip">
+                        <!-- Populated dynamically -->
+                      </div>
+                    </div>
+
+                    <!-- Deep Architectural Study Reference Matrix -->
+                    <div class="study-reference-matrix">
+                      <div class="reference-header">
+                        <div>
+                          <span class="matrix-pill"><i data-lucide="book-open"></i> Study Syllabus</span>
+                          <h4>Enterprise Architectural Patterns & Technical Checklists</h4>
+                          <p>Quick-reference summaries for technical reviews, system design interviews, and enterprise governance.</p>
+                        </div>
+                      </div>
+                      
+                      <div class="study-cards-grid">
+                        <!-- Card 1: Angular -->
+                        <div class="study-summary-card">
+                          <div class="study-card-head">
+                            <span class="study-badge badge-angular">Angular 18+</span>
+                            <h5>Signals & Enterprise Design Systems</h5>
+                          </div>
+                          <ul class="study-checklist">
+                            <li><strong>Reactivity:</strong> Migrated to Angular Signals for zero-overhead change detection and computed derivations.</li>
+                            <li><strong>Modularity:</strong> Standalone components with <code>inject()</code> pattern eliminating legacy NgModules.</li>
+                            <li><strong>Design Systems:</strong> Tokenized SCSS variables mapped to Angular Material and PrimeNG component trees.</li>
+                            <li><strong>Micro-Frontends:</strong> Module Federation architecture with isolated versioning and dynamic remotes.</li>
+                          </ul>
+                        </div>
+
+                        <!-- Card 2: FastAPI -->
+                        <div class="study-summary-card">
+                          <div class="study-card-head">
+                            <span class="study-badge badge-fastapi">FastAPI</span>
+                            <h5>Python Async & High-Throughput APIs</h5>
+                          </div>
+                          <ul class="study-checklist">
+                            <li><strong>Concurrency:</strong> ASGI Uvicorn event loop with async coroutines delivering 10k+ concurrent req/s.</li>
+                            <li><strong>Data Validation:</strong> Pydantic v2 Rust engine for strict schema enforcement and zero type-drift.</li>
+                            <li><strong>IoC Injection:</strong> Hierarchical <code>Depends()</code> injection for database pools, auth, and caching.</li>
+                            <li><strong>Documentation:</strong> Auto-generated interactive OpenAPI 3.1 & Swagger contracts.</li>
+                          </ul>
+                        </div>
+
+                        <!-- Card 3: React & Next.js -->
+                        <div class="study-summary-card">
+                          <div class="study-card-head">
+                            <span class="study-badge badge-react">React & Next.js</span>
+                            <h5>App Router, RSC & Concurrency</h5>
+                          </div>
+                          <ul class="study-checklist">
+                            <li><strong>RSC Paradigm:</strong> Server Components by default with 0-bundle client footprint and streaming SSR.</li>
+                            <li><strong>Concurrency:</strong> Interruptible renders with <code>useTransition</code> and Suspense data streaming.</li>
+                            <li><strong>State Hierarchy:</strong> Redux Toolkit for complex relational domains, Zustand for local UI stores.</li>
+                            <li><strong>Multi-Tier Caching:</strong> Next.js Data Cache + ISR revalidation with sub-second TTFB on Edge CDN.</li>
+                          </ul>
+                        </div>
+
+                        <!-- Card 4: Express.js -->
+                        <div class="study-summary-card">
+                          <div class="study-card-head">
+                            <span class="study-badge badge-express">Express.js & Node</span>
+                            <h5>Middleware Chains & Security Hardening</h5>
+                          </div>
+                          <ul class="study-checklist">
+                            <li><strong>Event Loop:</strong> Libuv non-blocking I/O with worker threads offloading CPU-intensive cryptography.</li>
+                            <li><strong>Middleware:</strong> Onion-layered request context, correlation IDs, and unified error filters.</li>
+                            <li><strong>Hardening:</strong> Helmet headers, CORS policies, Redis rate limiting, and JWT validation.</li>
+                            <li><strong>Clustering:</strong> Multi-core process management via Node Cluster module and PM2 supervision.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- GOOGLE SLIDES WEB EMBED VIEW (TOGGLEABLE) -->
+                  <div id="deck-embed-view" class="deck-view">
+                    <div class="embed-responsive">
+                      <iframe 
+                        id="google-slides-iframe"
+                        src="https://docs.google.com/presentation/d/e/2PACX-1vR6f-Kz9zLh5g2H0kF-z4zK8z-Example/embed?start=false&loop=false&delayms=3000" 
+                        frameborder="0" 
+                        allowfullscreen="true"
+                        title="Google Slides Presentation">
+                      </iframe>
+                    </div>
+                    <div class="embed-footer-bar">
+                      <p class="embed-caption">💡 Official Google Slides embed mode. For the best experience, use the <strong>Interactive Deck</strong> tab above with code contracts and architectural breakdowns.</p>
+                      <a href="https://docs.google.com/presentation" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                        <i data-lucide="external-link"></i> Open Presentation in New Tab
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Looker Studio Tab -->
+              <div class="tab-panel" id="tab-looker">
+                <div class="embed-wrapper">
+                  <div class="embed-header">
+                    <span>SaaS Application Performance & Web Vitals (Looker Studio)</span>
+                    <a href="https://lookerstudio.google.com" target="_blank" rel="noopener" class="link-external">
+                      Open in Looker <i data-lucide="external-link"></i>
+                    </a>
+                  </div>
+                  <div class="embed-responsive">
+                    <iframe 
+                      src="https://lookerstudio.google.com/embed/reporting/example" 
+                      frameborder="0" 
+                      allowfullscreen
+                      title="Looker Studio Report">
+                    </iframe>
+                  </div>
+                  <p class="embed-caption">💡 Live analytics report tracking Core Web Vitals, API latency, and uptime across production deployments.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section (Google Forms + Direct WhatsApp/Email/Phone) -->
+        <section id="contact" class="section">
+          <div class="container">
+            <div class="section-header">
+              <span class="section-tag">Direct Communication</span>
+              <h2 class="section-title">Let's Build Something Exceptional</h2>
+              <p class="section-subtitle">
+                Available for Senior Angular Developer, Lead UI Engineer, and Full-Stack opportunities.
+              </p>
+            </div>
+
+            <div class="contact-grid">
+              <!-- Interactive Contact Form -->
+              <div class="contact-card glass-panel">
+                <div class="contact-form-header">
+                  <h3>Send a Direct Inquiry</h3>
+                  <p>Submissions will alert Sri Tharun immediately and record directly into Google Sheets.</p>
+                </div>
+
+                <form id="portfolio-contact-form" class="contact-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="contact-name">Your Name</label>
+                      <input type="text" id="contact-name" name="name" required placeholder="e.g. John Doe / Hiring Manager" class="form-input" />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="contact-email">Email Address</label>
+                      <input type="email" id="contact-email" name="email" required placeholder="name@company.com" class="form-input" />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-subject">Subject</label>
+                    <input type="text" id="contact-subject" name="subject" placeholder="Senior Angular Developer Opportunity" class="form-input" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="4" required placeholder="Provide details about the role, team, or project requirements..." class="form-textarea"></textarea>
+                  </div>
+
+                  <button type="submit" id="submit-contact-btn" class="btn btn-primary btn-block">
+                    <i data-lucide="send"></i>
+                    <span>Send Message to Sri Tharun</span>
+                  </button>
+
+                  <div id="form-feedback" class="form-feedback hidden"></div>
+                </form>
+              </div>
+
+              <!-- Direct Contact Information Cards -->
+              <div class="contact-info-column">
+                <div class="info-card glass-panel">
+                  <h4><i data-lucide="mail" class="icon-accent"></i> Direct Contact</h4>
+                  <div class="contact-detail-items">
+                    <div class="detail-item">
+                      <span class="detail-label">Email:</span>
+                      <a href="mailto:indugulasritharun123@gmail.com" class="detail-value highlight-link">
+                        indugulasritharun123@gmail.com
+                      </a>
+                    </div>
+                    <div class="detail-item">
+                      <span class="detail-label">Phone / WhatsApp:</span>
+                      <a href="tel:+918919757387" class="detail-value highlight-link">
+                        +91-8919757387
+                      </a>
+                    </div>
+                    <div class="detail-item">
+                      <span class="detail-label">LinkedIn:</span>
+                      <a href="https://www.linkedin.com/in/indugula-veera-venkata-sri-tharun-4418b5217/" target="_blank" rel="noopener" class="detail-value highlight-link">
+                        linkedin.com/in/indugula-veera-venkata-sri-tharun-4418b5217
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-card glass-panel">
+                  <h4><i data-lucide="map-pin" class="icon-accent"></i> Location & Work Mode</h4>
+                  <p>Based in <strong>Hyderabad, Telangana, India</strong>. Actively open for Hybrid, On-site, and Worldwide Remote opportunities.</p>
+                  
+                  <div class="map-card">
+                    <div class="map-indicator">
+                      <span class="pulse-ring"></span>
+                      <span>Hyderabad, India • IST (UTC+05:30)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="info-card glass-panel">
+                  <h4><i data-lucide="file-text" class="icon-accent"></i> Live Google Doc Resume</h4>
+                  <p>View the live editable document or download directly from Google Drive.</p>
+                  <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-secondary btn-block">
+                    <i data-lucide="external-link"></i> Open Google Docs Resume
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-content">
+          <div class="footer-left">
+            <span class="logo-text">Sri Tharun<span class="highlight">.dev</span></span>
+            <p>Senior Angular Developer • 5+ Years Experience • Powered by Google Cloud & Modern Web Standards.</p>
+          </div>
+          <div class="footer-right">
+            <div class="footer-links">
+              <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener">Google Doc</a>
+              <a href="https://www.linkedin.com/in/indugula-veera-venkata-sri-tharun-4418b5217/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="mailto:indugulasritharun123@gmail.com">Email</a>
+            </div>
+            <p>© 2026 Indugula Veera Venkata Sri Tharun. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Figma-Style Floating Bottom Dock -->
+      <aside class="figma-dock" id="figma-dock" aria-label="Quick Navigation">
+        <a href="#hero" class="dock-item" title="Top / Intro">
+          <i data-lucide="home"></i>
+          <span>Intro</span>
+        </a>
+        <a href="#experience" class="dock-item" title="Experience">
+          <i data-lucide="briefcase"></i>
+          <span>Experience</span>
+        </a>
+        <a href="#projects" class="dock-item" title="Projects">
+          <i data-lucide="layout-grid"></i>
+          <span>Projects</span>
+        </a>
+        <a href="#skills" class="dock-item" title="Skills">
+          <i data-lucide="cpu"></i>
+          <span>Skills</span>
+        </a>
+        <button id="dock-resume-btn" class="dock-item" title="Resume">
+          <i data-lucide="file-text"></i>
+          <span>Resume</span>
+        </button>
+        <a href="#contact" class="dock-item dock-highlight" title="Contact">
+          <i data-lucide="send"></i>
+          <span>Contact</span>
+        </a>
+      </aside>
+
+      <!-- MODAL: Google Sheets CMS Configuration -->
+      <div id="sheet-modal" class="modal-overlay hidden">
+        <div class="modal-card glass-panel">
+          <div class="modal-header">
+            <div class="modal-title">
+              <i data-lucide="database" class="icon-accent"></i>
+              <h3>Google Sheets Headless CMS Settings</h3>
+            </div>
+            <button id="close-sheet-modal-btn" class="btn-icon" aria-label="Close modal">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <p class="modal-desc">
+              Connect your own live Google Sheet to dynamically update projects on this portfolio without redeploying code.
+            </p>
+
+            <div class="form-group">
+              <label for="sheet-url-input">Google Apps Script Web App URL or Published Sheet CSV URL</label>
+              <input 
+                type="url" 
+                id="sheet-url-input" 
+                placeholder="https://script.google.com/macros/s/.../exec"
+                class="form-input" 
+              />
+              <span class="input-hint">Leave blank to use preloaded high-fidelity showcase data.</span>
+            </div>
+
+            <div class="instruction-box">
+              <h4>🚀 Set up your Google Sheet in 60 seconds:</h4>
+              <ol>
+                <li>Create a Google Sheet with columns: <code>id, title, description, category, tags, demoUrl, githubUrl, imageUrl, featured</code></li>
+                <li>Go to <strong>Extensions &gt; Apps Script</strong> and paste the template code in <code>google-apps-script-template.js</code>.</li>
+                <li>Click <strong>Deploy &gt; New deployment &gt; Web app</strong> (Set "Who has access" to "Anyone").</li>
+                <li>Copy the resulting Web App URL and paste it above!</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button id="reset-sheet-btn" class="btn btn-ghost">Reset to Demo Data</button>
+            <button id="save-sheet-btn" class="btn btn-primary">
+              <i data-lucide="save"></i> Save & Sync Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MODAL: Full Resume Previewer -->
+      <div id="resume-modal" class="modal-overlay hidden">
+        <div class="modal-card modal-lg glass-panel">
+          <div class="modal-header">
+            <div class="modal-title">
+              <i data-lucide="file-text" class="icon-accent"></i>
+              <h3>Indugula Veera Venkata Sri Tharun – Resume</h3>
+            </div>
+            <button id="close-resume-modal-btn" class="btn-icon" aria-label="Close modal">
+              <i data-lucide="x"></i>
+            </button>
+          </div>
+
+          <div class="modal-body resume-modal-body">
+            <div class="resume-sheet-preview">
+              <div class="resume-paper">
+                <div class="resume-header-block">
+                  <h2>INDUGULA VEERA VENKATA SRI THARUN</h2>
+                  <p class="resume-role">Angular Developer | Senior Software Engineer</p>
+                  <p class="resume-meta">
+                    Hyderabad, Telangana, India • Phone: <a href="tel:+918919757387">+91-8919757387</a> • Email: <a href="mailto:indugulasritharun123@gmail.com">indugulasritharun123@gmail.com</a><br/>
+                    LinkedIn: <a href="https://www.linkedin.com/in/indugula-veera-venkata-sri-tharun-4418b5217/" target="_blank" rel="noopener">linkedin.com/in/indugula-veera-venkata-sri-tharun-4418b5217</a>
+                  </p>
+                </div>
+                
+                <hr class="resume-divider" />
+
+                <div class="resume-section">
+                  <h3>PROFESSIONAL SUMMARY</h3>
+                  <p>Senior Angular Developer with <strong>5+ years of experience</strong> building enterprise-grade Single Page Applications using Angular, TypeScript, JavaScript, RxJS, HTML5, CSS3, SCSS, Bootstrap, Node.js, Express.js and REST APIs. Experienced in developing scalable, responsive applications across Banking, Healthcare, E-commerce, and HR Management domains. Skilled in reusable component development, state management, performance optimization, and Agile software development.</p>
+                </div>
+
+                <div class="resume-section">
+                  <h3>TECHNICAL SKILLS</h3>
+                  <p><strong>Frontend Frameworks:</strong> Angular (8–18), React.js, Next.js, TypeScript, JavaScript (ES6+), RxJS, NgRx, Redux Toolkit, React Hooks, Zustand</p>
+                  <p><strong>Backend & Microservices:</strong> FastAPI (Python async, Pydantic), RESTful APIs (Architecture, OpenAPI/Swagger), Node.js, Express.js</p>
+                  <p><strong>DevOps & CI/CD:</strong> Jenkins (Declarative Pipelines, Jenkinsfile, Automated Builds), Docker, Azure DevOps, Git, GitHub Actions, npm</p>
+                  <p><strong>Styling & UI:</strong> HTML5, CSS3, SCSS/SASS, Bootstrap, Angular Material, PrimeNG, Tailwind CSS, Responsive Web Design</p>
+                  <p><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL, SQL</p>
+                  <p><strong>Cloud & Testing:</strong> Google Cloud Platform, Firebase Hosting & Firestore, Postman API Testing, Agile, Scrum</p>
+                </div>
+
+                <div class="resume-section">
+                  <h3>PROFESSIONAL EXPERIENCE</h3>
+                  
+                  <div style="margin-bottom: 1.25rem;">
+                    <p style="font-size: 1.05rem;"><strong>Senior Software Engineer</strong> – Belen IT Solutions</p>
+                    <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 0.35rem;">Oct 2025 – Present | Hyderabad | Hybrid</p>
+                    <ul>
+                      <li>Developed scalable Angular applications using modern Angular architecture.</li>
+                      <li>Built reusable UI components and implemented responsive user interfaces.</li>
+                      <li>Integrated REST APIs using Angular services and RxJS.</li>
+                      <li>Worked with Node.js and Express.js to support backend API development.</li>
+                      <li>Participated in Agile ceremonies, code reviews, bug fixing, and performance optimization.</li>
+                    </ul>
+                  </div>
+
+                  <div style="margin-bottom: 1.25rem;">
+                    <p style="font-size: 1.05rem;"><strong>UI Developer</strong> – Denken Solutions Inc.</p>
+                    <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 0.35rem;">Apr 2025 – Sep 2025 | Andhra Pradesh | On-site</p>
+                    <ul>
+                      <li>Developed scalable Angular applications using modern Angular architecture.</li>
+                      <li>Built reusable UI components and implemented responsive user interfaces.</li>
+                      <li>Integrated REST APIs using Angular services and RxJS.</li>
+                      <li>Worked with Node.js and Express.js to support backend API development.</li>
+                      <li>Participated in Agile ceremonies, code reviews, bug fixing, and performance optimization.</li>
+                    </ul>
+                  </div>
+
+                  <div style="margin-bottom: 1.25rem;">
+                    <p style="font-size: 1.05rem;"><strong>Full Stack Developer</strong> – Resource One IT Solutions</p>
+                    <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 0.35rem;">Jun 2022 – Feb 2025 | Hyderabad | On-site</p>
+                    <ul>
+                      <li>Developed scalable Angular applications using modern Angular architecture.</li>
+                      <li>Built reusable UI components and implemented responsive user interfaces.</li>
+                      <li>Integrated REST APIs using Angular services and RxJS.</li>
+                      <li>Worked with Node.js and Express.js to support backend API development.</li>
+                      <li>Participated in Agile ceremonies, code reviews, bug fixing, and performance optimization.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <p style="font-size: 1.05rem;"><strong>Full Stack Engineer</strong> – Unitel Software</p>
+                    <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 0.35rem;">Jun 2021 – Mar 2022 | Hyderabad | On-site</p>
+                    <ul>
+                      <li>Developed scalable Angular applications using modern Angular architecture.</li>
+                      <li>Built reusable UI components and implemented responsive user interfaces.</li>
+                      <li>Integrated REST APIs using Angular services and RxJS.</li>
+                      <li>Worked with Node.js and Express.js to support backend API development.</li>
+                      <li>Participated in Agile ceremonies, code reviews, bug fixing, and performance optimization.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="resume-section">
+                  <h3>PROJECT DOMAINS</h3>
+                  <ul>
+                    <li><strong>Banking:</strong> Customer portals, account management dashboards, transaction workflows, and secure authentication.</li>
+                    <li><strong>Healthcare:</strong> Medical management applications, patient information systems, appointment and record management.</li>
+                    <li><strong>E-commerce:</strong> Product catalog, shopping cart, checkout flow, order management, and payment integrations.</li>
+                    <li><strong>HR Management:</strong> Employee onboarding, attendance, payroll support, leave management, and reporting dashboards.</li>
+                  </ul>
+                </div>
+
+                <div class="resume-section">
+                  <h3>EDUCATION</h3>
+                  <p><strong>Bachelor of Science (B.Sc.)</strong></p>
+                  <p style="color: #64748b;">Viswa Bharatiya Vidya Parishad Degree College (2016–2019)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <a href="https://docs.google.com/document/d/1PKlC9Jyx7PAJTEhkinz6JC4uzeD2Piu9/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn-primary">
+              <i data-lucide="external-link"></i> Open on Google Docs
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Application Script -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
